@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<title>View Employee Details</title>
+
+<head>
+</head>
+<body>
+<h1>staff</h1>
+<table border="1px">
+    <thead>
+        <tr> 
+            <th>name</th>
+            <th>staff_id</th>
+            <th>dept</th>
+            <th>mail_id</th> 
+        </tr>
+        <tbody>
+            {% for i in sqldata %}
+            <tr>
+                <td>{{i[0]}}</td>          
+                <td>{{i[1]}}</td>
+                <td>{{i[2]}}</td>
+                <td>{{i[3]}}</td>
+                
+            </tr>
+            {% endfor %}
+        </tbody>
+     </thead>
+    
+</table>
+</body>
+</html>

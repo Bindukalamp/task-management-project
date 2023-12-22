@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<title>update</title>
+<link href="update">
+
+<head>
+</head>
+<body>
+    <header> <a href="">Add Projects</a>
+        <a href="delete_project">delete</a>
+ 
+<h2>Project List <button  class="btn btn-primary pull-right' data-toggle="modal"><a href="update">Add Projects</a></button></h2>
+<table border="1px">
+    <thead>
+        <tr> 
+            <th>project</th>
+            <th>in_charge</th>
+            <th>starting_date</th>
+            <th>due_date</th> 
+            <th>status</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        <tbody>
+            {% for i in sqldata %}
+            <tr>
+                <td>{{i[0]}}</td>          
+                <td>{{i[1]}}</td>
+                <td>{{i[2]}}</td>
+                <td>{{i[3]}}</td>
+                <td>{{i[4]}}</td> 
+                <td><a href-"" class="btn btn-warning btn-sm" data-toggle="modal" dat-target="">Edit</a></td>
+                <td><a href="#">delete</a></td>                </td>
+
+                
+            </tr>
+
+
+            {% endfor %}
+        </tbody>
+     </thead>
+    
+</table>
+</body>
